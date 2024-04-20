@@ -1,11 +1,50 @@
+.body{
+    margin: 0px;
+}
+.navbar{
+    background-color: #444547;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar input{
+    padding:15px ;
+    display:block;
+}
+.navbar a{
+    color: white;
+    text-decoration:none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    color: #A5E887;
+}
+.navbar li{
+    float: left;
+}
+
+.Article img{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+
 .junglegroen{
 color: #089103;
 }
 
 .logo-image{
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
+    width: 160px;
+    height: 60px;
     overflow: hidden;
-    margin-top: -6px;
 }
+
+
