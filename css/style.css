@@ -1,6 +1,10 @@
 .body{
     margin: 0px;
 }
+.header{
+    margin: 0px;
+
+}
 .navbar{
     background-color: #444547;
 }
@@ -27,7 +31,10 @@
 .navbar li{
     float: left;
 }
-
+.flexbox{
+    margin: 20px;
+    padding:20px;
+}
 .Article img{
     margin: 0px;
     padding: 0px;
