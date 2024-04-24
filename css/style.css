@@ -1,7 +1,6 @@
-
+/*navbar css */
 .navbar{
     background-color: #555658;
-    
 }
 .navbar ul{
     list-style-type: none;
@@ -28,38 +27,47 @@
 }
 
 
-
+/*Backgrounds*/
 .bg1{
     background-color: #A5E887;
 }
-
 .bgjungle{
     background-image: url(/assets/Sfeerbeeld\ jungle\ Cropped.jpg);
     background-position-y:38%;
     color: white;
 }
+
+/*Kleuren*/
+.junglegroen{
+color: #089103;
+}
+.lgroen{
+    color: #A5E887;
+}
+
+/*Tekst*/
 .textborder{
     text-shadow: h-shadow v-shadow blur-radius black;
 
 }
-.junglegroen{
-color: #089103;
-}
-
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
+article p{
+    margin: 10px;
+}
+
+/*Images*/
 .sfeerbeeld{
     display: block;
     width: 1200px;
     height: 600px;
     margin-left: 0px;
     margin-right: 0px;
-
 }
+
 .logo-image{
     width: 160px;
     height: 60px;
@@ -69,9 +77,8 @@ color: #089103;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: auto;
-
+    width: 200px;
+    height: 200px;
 }
 
 
