@@ -26,19 +26,22 @@
 .navbar li{
     float: left;
 }
-.flexbox{
-    margin: 20px;
-    padding:20px;
-}
-.Article img{
-    margin: 0px;
-    padding: 0px;
 
-}
+
+
 .bg1{
     background-color: #A5E887;
 }
 
+.bgjungle{
+    background-image: url(/assets/Sfeerbeeld\ jungle\ Cropped.jpg);
+    background-position-y:38%;
+    color: white;
+}
+.textborder{
+    text-shadow: h-shadow v-shadow blur-radius black;
+
+}
 .junglegroen{
 color: #089103;
 }
@@ -49,12 +52,28 @@ color: #089103;
     margin-right: auto;
 
 }
+.sfeerbeeld{
+    display: block;
+    width: 1200px;
+    height: 600px;
+    margin-left: 0px;
+    margin-right: 0px;
 
+}
 .logo-image{
     width: 160px;
     height: 60px;
     overflow: hidden;
 }
+.author-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+
+}
+
 
 
 
