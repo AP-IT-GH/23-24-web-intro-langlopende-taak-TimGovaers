@@ -64,6 +64,13 @@ article p,h1,h2,h3{
     padding: auto;
 }
 
+/*Containers*/
+.diensten{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
 /*Backgrounds*/
 .bg1{
     background-color: #A5E887;
