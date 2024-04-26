@@ -37,6 +37,7 @@ html, body {
 }
 
 /*Kleuren*/
+
 .junglegroen{
 color: #089103;
 }
@@ -71,6 +72,12 @@ color: #089103;
     padding: auto;
 }
 /*diensten*/
+.dienst{
+    border: 1px solid #ccc; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
 a :hover {
     text-decoration: none;
     color:#A5E887;
