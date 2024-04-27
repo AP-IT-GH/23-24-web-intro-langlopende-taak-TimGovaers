@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.CyberJungle</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="bgjungle text-dark">
+
+  <nav class="navbar">
+    <ul>
+      <li><img class="logo-image" src="./assets/Logo_nobg.png" alt="Logo"></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="diensten.html">Diensten</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><input type="text" placeholder="Search..."></li>
+    </ul>
+  </nav>
+
+<header>
+  <h1 class="bg1 text-center fw-bold junglegroen">Welcome to the jungle</h1>
+</header>
+<div class="container pb-5 ">
+  <div class="row pb-3 bg2">
+    <main>
+      <section class="row">
+
+        <article class="col-8">
+          <h2 class="display-4 junglegroen">Contact onze webdesigner</h2>
+          <p class="lead text-dark">Vul dit formulier in om de webdesigner te contacteren. <br> velden met een * zijn verplicht
+          </p>
+        </article>
+        <figure class="col-4"> 
+          <img class="author-image" src="/assets/auteurlanglopendetaak.jpg" alt="Foto van de webdesigner">
+          <figcaption>Foto van de webdesigner van CyberJungle, Tim Govaers</figcaption>
+        </figure>
+        <hr>
+
+        <form action="#" method="post">
+          <fieldset class="row g-3 mb-3">
+            <legend class="junglegroen text-uppercase fw-bolder pt-3">Persoonsgegevens</legend>
+            <div class="col-md-6">
+              <label for="Firstname" class="form-label">Voornaam <span>*</span></label>
+              <input type="text"  id="Firstname" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="Lastname" class="form-label">Achternaam <span>*</span></label>
+              <input type="text"  id="Lastname" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="Phonenr" class="form-label">Telefoonnummer</label>
+              <input type="tel"  id="Phonenr" class="form-control" placeholder="0412 34 56 78">
+            </div>
+            <div class="col-md-6">
+              <label for="birthdate" class="form-label">Geboortedatum</label>
+              <input type="date"  id="birthdate" class="form-control" >
+            </div>
+          </fieldset>
+
+          <fieldset class="row g-3 mb-3 mt-3">
+            <legend class="junglegroen text-uppercase fw-bolder pt-3">Accountgegevens</legend>
+            <div class="col-12">
+              <label for="mail" class="form-label">e-mail <span>*</span></label>
+              <input type="email"  id="mail" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="pasword" class="form-label">Paswoord <span>*</span></label>
+              <input type="password"  id="pasword" class="form-control" required placeholder="min 10 karakters, 1 cijfer, 1 hoofdletter en 1 speciaal karakter ">
+            </div>
+            <div class="col-md-6">
+              <label for="confirmpasword" class="form-label">Bevestig Paswoord <span>*</span></label>
+              <input type="password"  id="confirmpasword" class="form-control" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="row g-3 mb-3 mt-3">
+            <legend class="junglegroen text-uppercase fw-bolder pt-3">Adresgegevens</legend>
+            <div class="col-12">
+              <label for="adress" class="form-label">Adres <span>*</span></label>
+              <input type="text"  id="adress" class="form-control" required>
+            </div>
+            <div class="col-md-4">
+              <label for="countryCode" class="form-label">kies een land <span>*</span></label>
+              <select id="countryCode" class="form-select">
+                <option value="BE" selected>België</option>
+                <option value="DE">Duitsland</option>
+                <option value="FR">Frankrijk</option>
+                <option value="LU">Luxemburg</option>
+                <option value="NL">Nederland</option>
+                <option value="UK">Verenigd Koninkrijk</option>
+              </select>
+            </div>
+            <div class="col-6 col-md-3">
+              <label for="postalcode" class="form-label">postcode <span>*</span></label>
+              <input type="text" class="form-control" id="postalcode" required>
+            </div>
+            <div class="col-6 col-md-5">
+              <label for="city" class="form-label">stad <span>*</span></label>
+              <input type="text" class="form-control" id="city" required>
+            </div>
+          </fieldset>
+          <fieldset class="row g-3 mb-3 mt-3">
+            <legend class="junglegroen text-uppercase fw-bolder pt-3">Context CyberJungle</legend>
+            <div>
+              <label for="tevredenheid" class="form-label">Ben je tevreden van onze website?</label>
+              <input type="range" id="tevredenheid" class="form-range" min="0" max="10" step="1">
+            </div>
+            <div class="col-md-6">
+              <label for="dienst" class="form-label">Welke dienst(en) gebruikt u?</label> <br>
+              <input type="checkbox" id="kwetsbaarheidsscans">kwetsbaarheidsscans <br>
+              <input type="checkbox" id="Data-Encryptie">Data-Encryptie <br>
+              <input type="checkbox" id="Firewall">Firewall <br>
+              <input type="checkbox" id="endpoint security">endpoint security <br>
+              <input type="checkbox" id="Incident Response">Incident Response <br>
+              <input type="checkbox" id="Penetratietest">Penetratietest <br>+
+            </div>
+            <div class="col-md-6">
+              <label for="Purpose" class="form-label">Doeleinden <span>*</span></label>
+              <select id="Purpose" class="form-select">
+                <option value="PROF">Professioneel</option>
+                <option value="EDU">Educatief</option>
+                <option value="PERS">Persoonlijk</option>
+              </select>
+            </div>
+          </fieldset>
+          <input type="submit">
+        </form>
+      </section>
+
+
+    </main>
+  </div>
+</div>
+
+<footer>
+
+</footer>
+    
+</body>
+</html>
