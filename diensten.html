@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dienstencyberjungle</title>
+    <title>Index.CyberJungle</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,6 +11,8 @@
 
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="./css/style.css">
@@ -18,80 +20,102 @@
 </head>
 <body class="bgjungle">
 
-<nav class="navbar">
-  <ul>
-    <li><img class="logo-image" src="./assets/Logo_nobg.png" alt="Logo"></li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="diensten.html">Diensten</a></li>
-    <li><a href="#">Dashboard</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><input type="text" placeholder="Search..."></li>
-  </ul>
+  <nav class="navbar">
+    <ul>
+        <li><img class="logo-image" src="./assets/Logo_nobg.png" alt="Logo"></li>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Diensten
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="diensten.html">Dienstenpagina</a></li>
+                <li><a class="dropdown-item" href="#">Kwetsbaarheidscan</a></li>
+                <li><a class="dropdown-item" href="#">Data Encryptie</a></li>
+                <li><a class="dropdown-item" href="#">Firewall</a></li>
+                <li><a class="dropdown-item" href="#">Endpoint Security</a></li>
+                <li><a class="dropdown-item" href="#">Incident Response</a></li>
+                <li><a class="dropdown-item" href="#">PenetratieTest</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="#">Dashboard</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+    </ul>
+    <form action="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="zoeken..." aria-label="Search">
+        <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+    </form>
 </nav>
 
-    <header>
-      <h1 class="bg1 text-center fw-bold junglegroen">Welcome to the jungle</h1>
-    </header>
+<header>
+<h1 class="text-center fw-bold junglegroen">Welcome to the jungle</h1>
+</header>
 
 <div class="container pb-5">
-  <div class="row bg2 pb-3">
-    <main>
-<section id="diensten" class="row">
-  <article class="col-12">
-    <h2 class="display-4 junglegroen">Ontdek Onze Professionele Diensten</h2>
-    <p class="lead text-dark">Bij CyberJungle bieden we een breed scala aan gespecialiseerde diensten aan om uw digitale omgeving te beveiligen en te optimaliseren. Ons doel is om uw bedrijfsvoering veiliger en efficiënter te maken, zodat u zich kunt richten op wat echt belangrijk is. <br>
-      Van kwetsbaarheidsscans en data encryptie tot geavanceerde firewall bescherming en incident respons, ons team van deskundigen staat klaar om u te ondersteunen met state-of-the-art technologieën en diepgaande expertise. Onze diensten zijn ontworpen om te voldoen aan de specifieke behoeften van uw organisatie, ongeacht de grootte of sector. <br>
-      Blader door onze diensten hieronder en ontdek hoe wij u kunnen helpen uw cyberveiligheid naar een hoger niveau te tillen. Neem vandaag nog contact met ons op voor een persoonlijk adviesgesprek!    
-    </p>
-  </article>
-    
-  <article class="dienst col-sm-6 col-md-4">
-    <a href="#">
-      <h2 class="text-uppercase fs-4 fw-bolder pt-3">Kwetsbaarheidscan</h2>
-      <p class="h6 small">Vind jouw zwakste schakel!</p>
-      <img src="/assets/VulnerabilityScanning.jpeg" alt="illustratie van een scan die word uitgevoerd" class="img-fluid" title="Kwetsbaarheidscan">
-    </a>
-  </article>
-  <article class="dienst col-sm-6 col-md-4">
-    <a href="#">
-      <h2 class="text-uppercase fs-4 fw-bolder pt-3">Data Encryptie</h2>
-      <p class="h6 small">Maak je data onleesbaar voor de buitenwereld!</p>
-      <img src="/assets/Encryptie.jpeg" alt="ai-generated foto van een slot" class="img-fluid" title="Data Encryptie">
-    </a>
-  </article>
-  <article class="dienst col-sm-6 col-md-4">
-    <a href="#">
-      <h2 class="text-uppercase fs-4 fw-bolder pt-3">Firewall</h2>
-      <p class="h6 small">Scherm je af van alle dreigingen!</p>
-      <img src="/assets/FireWall.png" alt="ai-generated foto van een technologisch schild" class="img-fluid" title="Firewall">
-    </a>
-  </article>
-  <article class="dienst col-sm-6 col-md-4">
-    <a href="#">
-      <h2 class="text-uppercase fs-4 fw-bolder pt-3">Endpoint Security</h2>
-      <p class="h6 small">Beveilig al je netwerkapparaten!</p>
-      <img src="/assets/Endpoint security.png" alt="Foto van een mobiel apparaat op slot" class="img-fluid" title="Endpoint Security">
-    </a>
-  </article>
-  <article class="dienst col-sm-6 col-md-4">
-    <a href="#">
-      <h2 class="text-uppercase fs-4 fw-bolder pt-3">Incident Response</h2>
-      <p class="h6 small">Los je problemen op voor het te laat is!</p>
-      <img src="/assets/Incident response.png" alt="een tekening van een meeting" class="img-fluid" title="Incident Response">
-    </a>
-  </article>
-  <article class="dienst col-sm-6 col-md-4">
-    <a href="#">
-      <h2 class="text-uppercase fs-4 fw-bolder pt-3">PenetratieTest</h2>
-      <p class="h6 small">Test je netwerk!</p>
-      <img src="/assets/penetrationtest.png" alt="een ai-generated foto van een PenetratieTest" class="img-fluid" title="PenetratieTest">
-    </a>
-  </article>
-</section>
-      
-    </main>
-  </div>
+    <div class="row pb-3">
+        <main>
+            <section id="diensten" class="row">
+                <article class="col-12">
+                  <h2 class="display-4 junglegroen">Ontdek Onze Professionele Diensten</h2>
+                  <p class="lead">Bij CyberJungle bieden we een breed scala aan gespecialiseerde diensten aan om uw digitale omgeving te beveiligen en te optimaliseren. Ons doel is om uw bedrijfsvoering veiliger en efficiënter te maken, zodat u zich kunt richten op wat echt belangrijk is. <br>
+                    Van kwetsbaarheidsscans en data encryptie tot geavanceerde firewall bescherming en incident respons, ons team van deskundigen staat klaar om u te ondersteunen met state-of-the-art technologieën en diepgaande expertise. Onze diensten zijn ontworpen om te voldoen aan de specifieke behoeften van uw organisatie, ongeacht de grootte of sector. <br>
+                    Blader door onze diensten hieronder en ontdek hoe wij u kunnen helpen uw cyberveiligheid naar een hoger niveau te tillen. Neem vandaag nog contact met ons op voor een persoonlijk adviesgesprek!    
+                  </p>
+                </article>
+                  
+                <article class="dienst col-sm-6 col-md-4">
+                  <a href="#">
+                    <h2 class="text-uppercase fs-4 fw-bolder pt-3">Kwetsbaarheidscan</h2>
+                    <p class="h6 small">Vind jouw zwakste schakel!</p>
+                    <img src="/assets/VulnerabilityScanning.jpeg" alt="illustratie van een scan die word uitgevoerd" class="img-fluid" title="Kwetsbaarheidscan">
+                  </a>
+                </article>
+                <article class="dienst col-sm-6 col-md-4">
+                  <a href="#">
+                    <h2 class="text-uppercase fs-4 fw-bolder pt-3">Data Encryptie</h2>
+                    <p class="h6 small">Maak je data onleesbaar voor de buitenwereld!</p>
+                    <img src="/assets/Encryptie.jpeg" alt="ai-generated foto van een slot" class="img-fluid" title="Data Encryptie">
+                  </a>
+                </article>
+                <article class="dienst col-sm-6 col-md-4">
+                  <a href="#">
+                    <h2 class="text-uppercase fs-4 fw-bolder pt-3">Firewall</h2>
+                    <p class="h6 small">Scherm je af van alle dreigingen!</p>
+                    <img src="/assets/FireWall.png" alt="ai-generated foto van een technologisch schild" class="img-fluid" title="Firewall">
+                  </a>
+                </article>
+                <article class="dienst col-sm-6 col-md-4">
+                  <a href="#">
+                    <h2 class="text-uppercase fs-4 fw-bolder pt-3">Endpoint Security</h2>
+                    <p class="h6 small">Beveilig al je netwerkapparaten!</p>
+                    <img src="/assets/Endpoint security.png" alt="Foto van een mobiel apparaat op slot" class="img-fluid" title="Endpoint Security">
+                  </a>
+                </article>
+                <article class="dienst col-sm-6 col-md-4">
+                  <a href="#">
+                    <h2 class="text-uppercase fs-4 fw-bolder pt-3">Incident Response</h2>
+                    <p class="h6 small">Los je problemen op voor het te laat is!</p>
+                    <img src="/assets/Incident response.png" alt="een tekening van een meeting" class="img-fluid" title="Incident Response">
+                  </a>
+                </article>
+                <article class="dienst col-sm-6 col-md-4">
+                  <a href="#">
+                    <h2 class="text-uppercase fs-4 fw-bolder pt-3">PenetratieTest</h2>
+                    <p class="h6 small">Test je netwerk!</p>
+                    <img src="/assets/penetrationtest.png" alt="een ai-generated foto van een PenetratieTest" class="img-fluid" title="PenetratieTest">
+                  </a>
+                </article>
+              </section>
+        </main>
+        <footer>
+            <Article class="row  p-3 bg1">
+              <h3 class="fw-bold junglegroen h1">Over de auteur van CyberJungle</h3>
+              <p class="col-md-6">Mijn naam is Tim Govaers, ik volg de graduaatsopleiding Systeem- en Netwerkbeheer aan AP Hogeschool. Voor het vak webtechnologie moeten we een website maken over een onderwerp binnen onze opleiding ik heb daarvoor cybersecurity gekozen omdat het een van de belangrijkste aspecten is binnen systeem- en netwerkbeheer. <br><br>
+                 Ik heb niet veel ervaring binnen het onderwerp, dus heb ik wat onderzoek moeten doen om de informatie op deze website te vinden. Deze website is puur informatief je kan mij altijd contacteren via de contact pagina. Hopelijk helpt mijn website jou om je weg te vinden in de gevaarlijke jungle die we het internet noemen.
+                </p>
+                <img class="col-md-4 author-image center" src="./assets/auteurlanglopendetaak.jpg" alt="Foto van de Auteur">
+            </Article>
+          </footer>
+    </div>
 </div>
-<footer></footer>   
 </body>
 </html>
