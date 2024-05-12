@@ -39,13 +39,13 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Diensten
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="diensten.html">Dienstenpagina</a></li>
-                <li><a class="dropdown-item" href="Kwetsbaarheidscan.html">Kwetsbaarheidscan</a></li>
-                <li><a class="dropdown-item" href="#">Data Encryptie</a></li>
-                <li><a class="dropdown-item" href="#">Firewall</a></li>
-                <li><a class="dropdown-item" href="#">Endpoint Security</a></li>
-                <li><a class="dropdown-item" href="#">Incident Response</a></li>
-                <li><a class="dropdown-item" href="#">PenetratieTest</a></li>
+              <li><a class="dropdown-item" href="diensten.html">Dienstenpagina</a></li>
+              <li><a class="dropdown-item" href="kwetsbaarheidscan.html">Kwetsbaarheidscan</a></li>
+              <li><a class="dropdown-item" href="dataencryptie.html">Data Encryptie</a></li>
+              <li><a class="dropdown-item" href="firewall.html">Firewall</a></li>
+              <li><a class="dropdown-item" href="endpointsecurity.html">Endpoint Security</a></li>
+              <li><a class="dropdown-item" href="incidentresponse.html">Incident Response</a></li>
+              <li><a class="dropdown-item" href="penetratietest.html">PenetratieTest</a></li>
             </ul>
         </li>
         <li class="nav-item"><a href="#">Dashboard</a></li>
@@ -71,18 +71,33 @@
 
             <section class="row">
 
-                <article class="col-8">
-                  <h2 class="display-4 junglegroen">Contact onze webdesigner</h2>
-                  <p class="lead">Vul dit formulier in om de webdesigner te contacteren. <br> velden met een * zijn verplicht
+                <article class="row">
+                  <h2 class="display-4 junglegroen">Ons team</h2>
+                  <p class="lead">Met dit formulier kan je onze webdesigner of admin contacteren, dit kan je aanduiden in het formulier.<br> velden met een * zijn verplicht
                   </p>
                 </article>
-                <figure class="col-4"> 
+                <figure class="col-6 text-center"> 
                   <img class="author-image" src="/assets/auteurlanglopendetaak.jpg" alt="Foto van de webdesigner">
                   <figcaption>Foto van de webdesigner van CyberJungle, Tim Govaers</figcaption>
+                </figure>
+                <figure class="col-6 text-center">
+                  <img class="author-image" src="assets/admin.jpg" alt="Foto van de admin">
+                  <figcaption>Foto can de admin van CyberJungle Jan Janssens</figcaption>
                 </figure>
                 <hr>
         
                 <form action="#" method="post">
+                  <fieldset class="row g-3 mb-3">
+                    <legend class="junglegroen text-uppercase fw-bolder pt-3">
+                      <div>
+                        <label for="Ontvanger" class="form-label">Ontvanger</label>
+                        <select id="Ontvanger" class="form-select">
+                          <option value="admin">Admin</option>
+                          <option value="webdesigner">Webdesigner</option>
+                        </select>
+                      </div>
+                    </legend>
+                  </fieldset>
                   <fieldset class="row g-3 mb-3">
                     <legend class="junglegroen text-uppercase fw-bolder pt-3">Persoonsgegevens</legend>
                     <div class="col-md-6">
@@ -172,118 +187,35 @@
                   <input type="submit">
                 </form>
           </section>
-          <section class="row">
-<hr>
-            <article class="col-8">
-              <h2 class="display-4 junglegroen">Contact onze Admin</h2>
-              <p class="lead">Vul dit formulier in om de Admin te contacteren. <br> velden met een * zijn verplicht
-              </p>
-            </article>
-            <figure class="col-4"> 
-              <img class="author-image" src="/assets/ADMIN_cyberjungle.jpg" alt="Foto van de webdesigner">
-              <figcaption>Foto van de Admin van CyberJungle, Jan Janssens</figcaption>
-            </figure>
-            <hr>
-    
-            <form action="#" method="post">
-              <fieldset class="row g-3 mb-3">
-                <legend class="junglegroen text-uppercase fw-bolder pt-3">Persoonsgegevens</legend>
-                <div class="col-md-6">
-                  <label for="Firstname" class="form-label">Voornaam <span>*</span></label>
-                  <input type="text"  id="Firstname" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="Lastname" class="form-label">Achternaam <span>*</span></label>
-                  <input type="text"  id="Lastname" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="Phonenr" class="form-label">Telefoonnummer</label>
-                  <input type="tel"  id="Phonenr" class="form-control" placeholder="0412 34 56 78">
-                </div>
-                <div class="col-md-6">
-                  <label for="birthdate" class="form-label">Geboortedatum</label>
-                  <input type="date"  id="birthdate" class="form-control" >
-                </div>
-              </fieldset>
-    
-              <fieldset class="row g-3 mb-3 mt-3">
-                <legend class="junglegroen text-uppercase fw-bolder pt-3">Accountgegevens</legend>
-                <div class="col-12">
-                  <label for="mail" class="form-label">e-mail <span>*</span></label>
-                  <input type="email"  id="mail" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="pasword" class="form-label">Paswoord <span>*</span></label>
-                  <input type="password"  id="pasword" class="form-control" required placeholder="min 10 karakters, 1 cijfer, 1 hoofdletter en 1 speciaal karakter ">
-                </div>
-                <div class="col-md-6">
-                  <label for="confirmpasword" class="form-label">Bevestig Paswoord <span>*</span></label>
-                  <input type="password"  id="confirmpasword" class="form-control" required>
-                </div>
-              </fieldset>
-    
-              <fieldset class="row g-3 mb-3 mt-3">
-                <legend class="junglegroen text-uppercase fw-bolder pt-3">Adresgegevens</legend>
-                <div class="col-12">
-                  <label for="adress" class="form-label">Adres <span>*</span></label>
-                  <input type="text"  id="adress" class="form-control" required>
-                </div>
-                <div class="col-md-4">
-                  <label for="countryCode" class="form-label">kies een land <span>*</span></label>
-                  <select id="countryCode" class="form-select">
-                    <option value="BE" selected>België</option>
-                    <option value="DE">Duitsland</option>
-                    <option value="FR">Frankrijk</option>
-                    <option value="LU">Luxemburg</option>
-                    <option value="NL">Nederland</option>
-                    <option value="UK">Verenigd Koninkrijk</option>
-                  </select>
-                </div>
-                <div class="col-6 col-md-3">
-                  <label for="postalcode" class="form-label">postcode <span>*</span></label>
-                  <input type="text" class="form-control" id="postalcode" required>
-                </div>
-                <div class="col-6 col-md-5">
-                  <label for="city" class="form-label">stad <span>*</span></label>
-                  <input type="text" class="form-control" id="city" required>
-                </div>
-              </fieldset>
-              <fieldset class="row g-3 mb-3 mt-3">
-                <legend class="junglegroen text-uppercase fw-bolder pt-3">Context CyberJungle</legend>
-                <div>
-                  <label for="tevredenheid" class="form-label">Ben je tevreden van onze website?</label>
-                  <input type="range" id="tevredenheid" class="form-range" min="0" max="10" step="1">
-                </div>
-                <div class="col-md-6">
-                  <label for="dienst" class="form-label">Welke dienst(en) gebruikt u?</label> <br>
-                  <input type="checkbox" id="kwetsbaarheidsscans">&nbsp;Kwetsbaarheidsscans <br>
-                  <input type="checkbox" id="Data-Encryptie">&nbsp;Data-Encryptie <br>
-                  <input type="checkbox" id="Firewall">&nbsp;Firewall <br>
-                  <input type="checkbox" id="endpoint security">&nbsp;Endpoint security <br>
-                  <input type="checkbox" id="Incident Response">&nbsp;Incident Response <br>
-                  <input type="checkbox" id="Penetratietest">&nbsp;Penetratietest <br>
-                </div>
-                <div class="col-md-6">
-                  <label for="Purpose" class="form-label">Doeleinden <span>*</span></label>
-                  <select id="Purpose" class="form-check">
-                    <option value="PROF">Professioneel</option>
-                    <option value="EDU">Educatief</option>
-                    <option value="PERS">Persoonlijk</option>
-                  </select>
-                </div>
-              </fieldset>
-              <input type="submit">
-            </form>
-      </section>
+
         </main>
         <footer>
-            <Article class="row  p-3 bg1">
-              <h3 class="fw-bold junglegroen h1">Over de auteur van CyberJungle</h3>
-              <p class="col-md-6">Mijn naam is Tim Govaers, ik volg de graduaatsopleiding Systeem- en Netwerkbeheer aan AP Hogeschool. Voor het vak webtechnologie moeten we een website maken over een onderwerp binnen onze opleiding ik heb daarvoor cybersecurity gekozen omdat het een van de belangrijkste aspecten is binnen systeem- en netwerkbeheer. <br><br>
-                 Ik heb niet veel ervaring binnen het onderwerp, dus heb ik wat onderzoek moeten doen om de informatie op deze website te vinden. Deze website is puur informatief je kan mij altijd contacteren via de contact pagina. Hopelijk helpt mijn website jou om je weg te vinden in de gevaarlijke jungle die we het internet noemen.
-                </p>
-                <img class="col-md-4 author-image center" src="./assets/auteurlanglopendetaak.jpg" alt="Foto van de Auteur">
-            </Article>
+          <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+          <p>CYBER Jungle<br>
+            email <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
+            phone +32 123 / 45 67 89</p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com" target="_blank">
+                <i class="bi bi-youtube koffiebruin fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram koffiebruin fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook koffiebruin fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/" target="_blank">
+                <i class="bi bi-twitter koffiebruin fs-3"></i>
+              </a>
+            </li>
+          </ul>
           </footer>
     </div>
 </div>
