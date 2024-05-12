@@ -2,6 +2,12 @@
 * Gebruik hiervoor de documentatie op https://leafletjs.com/ 
 * Verander in de code online alle "var" in "let".
 */
+let myIcon = L.icon({
+    iconUrl: 'assets/mapmarker.png',
+    iconSize: [38, 95],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+});
 let map = L.map('apMap').setView([51.23009, 4.41616],17);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -10,7 +16,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-let marker =L.marker([51.23009, 4.41616]).addTo(map);
+let marker =L.marker([51.23009, 4.41616], {icon: myIcon}).addTo(map);
 
 let bounds = [[51.23041, 4.4155], [51.22991, 4.41675]];
 
